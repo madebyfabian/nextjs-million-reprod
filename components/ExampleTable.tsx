@@ -1,7 +1,11 @@
 import { PropsWithChildren } from 'react'
 
 export const ExampleTable = ({ children }: PropsWithChildren<{}>) => {
-	return <table>{children}</table>
+	return (
+		<table>
+			<tbody>{children}</tbody>
+		</table>
+	)
 }
 
 export const ExampleRow = ({ children }: PropsWithChildren<{}>) => {
