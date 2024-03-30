@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import { ExampleSection } from '@/component/ExampleSection'
+import { ExampleSection } from '@/components/ExampleSection'
+import { ExampleCol, ExampleRow, ExampleTable } from '@/components/ExampleTable'
 
 export default function Home() {
 	return (
@@ -12,7 +13,23 @@ export default function Home() {
 			</Head>
 			<main>
 				This is the /index route.
+				<br />
+				<br />
 				<ExampleSection />
+				<br />
+				<br />
+				Table:
+				<ExampleTable>
+					<ExampleRow>
+						<ExampleCol>Cell 1</ExampleCol>
+						<ExampleCol>Cell 1</ExampleCol>
+					</ExampleRow>
+
+					<ExampleRow>
+						<ExampleCol>Cell 2</ExampleCol>
+						<ExampleCol>Cell 2</ExampleCol>
+					</ExampleRow>
+				</ExampleTable>
 			</main>
 		</>
 	)
